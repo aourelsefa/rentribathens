@@ -142,6 +142,88 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Reviews Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Τι Λένε οι Πελάτες μας
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Απολαύστε τις εμπειρίες των πελατών μας από τις εκδρομές τους
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Review 1 */}
+            <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                "Εξαιρετική εμπειρία! Το σκάφος ήταν άριστα συντηρημένο και ο κάπετανος πολύ επαγγελματίας. Περνούσαμε υπέροχα στο Σαρωνικό. Σίγουρα θα το ξανακάνουμε!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  ΜΚ
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Μάριος Κωνσταντίνου</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                "Amazing experience! We rented the Olympic 490 for a family day trip around the Saronic Gulf. The boat was clean, safe, and perfect for our group. The captain was professional and showed us beautiful spots. Highly recommend!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  SM
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Sarah Mitchell</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                "Εντυπωσιακή ημέρα στο Ribco 27! Γρήγορο, άνετο και με πλήρη εξοπλισμό ασφαλείας. Οι φίλοι μου ήταν ενθουσιασμένοι. Θα επιστρέψουμε σίγουρα!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  ΝΔ
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Νίκος Δημητρίου</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Strip */}
       <section className="bg-primary text-white">
         <div className="section-padding">

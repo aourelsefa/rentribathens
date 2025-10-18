@@ -234,7 +234,7 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100">
               <div className="aspect-video relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.2!2d23.888333!3d37.778333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2b3c4d5e6f7%3A0x1234567890abcdef!2sLagonisi%20Marina!5e0!3m2!1sel!2sgr!4v1700000000000!5m2!1sel!2sgr"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12576.6!2d23.898490!3d37.776138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzM0LjEiTiAyM8KwNTMnNTQuNiJF!5e0!3m2!1sel!2sgr!4v1234567890123!5m2!1sel!2sgr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
