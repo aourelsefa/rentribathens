@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://rentribathens.gr',
   generateRobotsTxt: true, // (optional)
   generateIndexSitemap: false, // Disable index sitemap for simplicity
-  
+
   // Default transformation function
   transform: async (config, path) => {
     // Custom priority and changefreq based on path
@@ -36,9 +36,9 @@ module.exports = {
   },
 
   // Additional paths to include
-  additionalPaths: async (config) => {
+  additionalPaths: async _config => {
     const { boats } = await import('./data/boats.ts');
-    
+
     // Generate paths for individual boat pages
     const boatPaths = boats.map(boat => ({
       loc: `/boats/${boat.slug}`,
@@ -59,22 +59,12 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
-        disallow: [
-          '/api/',
-          '/_next/',
-          '/admin/',
-          '/private/',
-        ],
+        disallow: ['/api/', '/_next/', '/admin/', '/private/'],
       },
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: [
-          '/api/',
-          '/_next/',
-          '/admin/',
-          '/private/',
-        ],
+        disallow: ['/api/', '/_next/', '/admin/', '/private/'],
       },
     ],
     additionalSitemaps: [
@@ -83,16 +73,11 @@ module.exports = {
   },
 
   // Exclude certain paths from sitemap
-  exclude: [
-    '/api/*',
-    '/_next/*',
-    '/admin/*',
-    '/private/*',
-  ],
+  exclude: ['/api/*', '/_next/*', '/admin/*', '/private/*'],
 
   // Custom sitemap configuration
   sitemapSize: 5000,
-  
+
   // Add alternate language versions if needed
   alternateRefs: [
     {

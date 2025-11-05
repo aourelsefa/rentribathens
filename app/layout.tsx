@@ -11,13 +11,28 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+  ),
   title: {
     default: 'RentRibAthens - Ενοικίαση RIB στη Αθήνα',
-    template: '%s | RentRibAthens'
+    template: '%s | RentRibAthens',
   },
-  description: 'Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας. Ασφαλείς και άνετες εκδρομές με επαγγελματική εξυπηρέτηση.',
-  keywords: ['RIB', 'ενοικίαση', 'Αθήνα', 'Σαρωνικός', 'περιηγήσεις', 'σκάφη', 'θαλάσσια εκδρομές', 'Λαγονήσι', 'boat rental', 'Athens', 'Greece'],
+  description:
+    'Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας. Ασφαλείς και άνετες εκδρομές με επαγγελματική εξυπηρέτηση.',
+  keywords: [
+    'RIB',
+    'ενοικίαση',
+    'Αθήνα',
+    'Σαρωνικός',
+    'περιηγήσεις',
+    'σκάφη',
+    'θαλάσσια εκδρομές',
+    'Λαγονήσι',
+    'boat rental',
+    'Athens',
+    'Greece',
+  ],
   authors: [{ name: 'RentRibAthens' }],
   creator: 'RentRibAthens',
   publisher: 'RentRibAthens',
@@ -33,7 +48,8 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'RentRibAthens',
     title: 'RentRibAthens - Ενοικίαση RIB στη Αθήνα',
-    description: 'Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας. Ασφαλείς και άνετες εκδρομές με επαγγελματική εξυπηρέτηση.',
+    description:
+      'Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας. Ασφαλείς και άνετες εκδρομές με επαγγελματική εξυπηρέτηση.',
     images: [
       {
         url: '/og-image.png',
@@ -46,7 +62,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'RentRibAthens - Ενοικίαση RIB στη Αθήνα',
-    description: 'Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας',
+    description:
+      'Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας',
     images: ['/og-image.png'],
   },
   robots: {
@@ -73,12 +90,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="el">
+    <html lang='el'>
       <body className={`${roboto.variable} font-sans antialiased`}>
         <StructuredData />
-        <Layout>
-          {children}
-        </Layout>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

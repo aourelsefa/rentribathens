@@ -110,20 +110,19 @@ export async function POST(request: NextRequest) {
     */
 
     return NextResponse.json(
-      { 
+      {
         message: 'Contact form submitted successfully',
-        success: true 
+        success: true,
       },
       { status: 200 }
     );
-
   } catch (error) {
     console.error('Contact form submission error:', error);
-    
+
     return NextResponse.json(
-      { 
+      {
         error: 'Internal server error',
-        success: false 
+        success: false,
       },
       { status: 500 }
     );
@@ -132,8 +131,5 @@ export async function POST(request: NextRequest) {
 
 // Handle other HTTP methods
 export async function GET() {
-  return NextResponse.json(
-    { error: 'Method not allowed' },
-    { status: 405 }
-  );
+  return NextResponse.json({ error: 'Method not allowed' }, { status: 405 });
 }

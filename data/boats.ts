@@ -42,8 +42,10 @@ export const boats: Boat[] = [
     id: '01',
     slug: 'lobster-23-rent-rib-athens',
     name: 'Lobster 23',
-    shortDescription: 'Άνετο και γρήγορο σκάφος – ιδανικό για ημερήσιες εκδρομές και κρουαζιέρα.',
-    longDescription: 'Το Lobster 23 προσφέρει άνεση για έως 9 επιβάτες, με ισχυρό κινητήρα 150 ίππων και χώρο για ηλιοθεραπεία. Ιδανικό για κλασικές αποδράσεις προς Σαρωνικό.',
+    shortDescription:
+      'Άνετο και γρήγορο σκάφος – ιδανικό για ημερήσιες εκδρομές και κρουαζιέρα.',
+    longDescription:
+      'Το Lobster 23 προσφέρει άνεση για έως 9 επιβάτες, με ισχυρό κινητήρα 150 ίππων και χώρο για ηλιοθεραπεία. Ιδανικό για κλασικές αποδράσεις προς Σαρωνικό.',
     capacity: 9,
     engine: '150 HP',
     pricePerDay: 400,
@@ -57,7 +59,7 @@ export const boats: Boat[] = [
       '/images/boats/01-7.jpg',
       '/images/boats/01-8.jpg',
       '/images/boats/01-9.jpg',
-      '/images/boats/01-10.jpg'
+      '/images/boats/01-10.jpg',
     ],
     // Technical specifications
     manufacturer: 'Lobster',
@@ -82,14 +84,16 @@ export const boats: Boat[] = [
     childrenAllowed: true,
     partiesAllowed: true,
     flexibleArrival: true,
-    flexibleDeparture: true
+    flexibleDeparture: true,
   },
   {
     id: '02',
     slug: 'ribco-27-rent-rib-athens',
     name: 'Ribco 27',
-    shortDescription: 'Ισχυρό και γρήγορο σκάφος — ιδανικό για μεγάλες παρέες και μακρινές εκδρομές.',
-    longDescription: 'Το Ribco 27 είναι ένα εντυπωσιακό σκάφος με κινητήρα 250 ίππων και χωρητικότητα 8 ατόμων. Ιδανικό για εξαιρετικές εκδρομές και γρήγορες μετακινήσεις.',
+    shortDescription:
+      'Ισχυρό και γρήγορο σκάφος — ιδανικό για μεγάλες παρέες και μακρινές εκδρομές.',
+    longDescription:
+      'Το Ribco 27 είναι ένα εντυπωσιακό σκάφος με κινητήρα 250 ίππων και χωρητικότητα 8 ατόμων. Ιδανικό για εξαιρετικές εκδρομές και γρήγορες μετακινήσεις.',
     capacity: 8,
     engine: '250 HP',
     pricePerDay: 500,
@@ -105,7 +109,7 @@ export const boats: Boat[] = [
       '/images/boats/02-9.jpg',
       '/images/boats/02-10.jpg',
       '/images/boats/02-11.jpg',
-      '/images/boats/02-12.jpg'
+      '/images/boats/02-12.jpg',
     ],
     // Technical specifications
     manufacturer: 'Ribco',
@@ -132,14 +136,16 @@ export const boats: Boat[] = [
     childrenAllowed: true,
     partiesAllowed: true,
     flexibleArrival: true,
-    flexibleDeparture: true
+    flexibleDeparture: true,
   },
   {
     id: '03',
     slug: 'olympic-490-rent-rib-athens',
     name: 'Olympic 490',
-    shortDescription: 'Συμπαγές μηχανοκίνητο σκάφος — ιδανικό για ημερήσιες εκδρομές και γρήγορη πλεύση.',
-    longDescription: 'Το Olympic 490 είναι ένα άνετο και αξιόπιστο σκάφος με κινητήρα 34 ίππων. Ιδανικό για εκδρομές μέχρι 5 ατόμων, με άνετη πλεύση και οικονομική κατανάλωση καυσίμου.',
+    shortDescription:
+      'Συμπαγές μηχανοκίνητο σκάφος — ιδανικό για ημερήσιες εκδρομές και γρήγορη πλεύση.',
+    longDescription:
+      'Το Olympic 490 είναι ένα άνετο και αξιόπιστο σκάφος με κινητήρα 34 ίππων. Ιδανικό για εκδρομές μέχρι 5 ατόμων, με άνετη πλεύση και οικονομική κατανάλωση καυσίμου.',
     capacity: 5,
     engine: '34 HP',
     pricePerDay: 180,
@@ -150,7 +156,7 @@ export const boats: Boat[] = [
       '/images/boats/03-3.jpg',
       '/images/boats/03-5.png',
       '/images/boats/03-6.png',
-      '/images/boats/03-7.png'
+      '/images/boats/03-7.png',
     ],
     // Technical specifications
     manufacturer: 'Olympic',
@@ -175,6 +181,6 @@ export const boats: Boat[] = [
     childrenAllowed: true,
     partiesAllowed: true,
     flexibleArrival: true,
-    flexibleDeparture: true
-  }
+    flexibleDeparture: true,
+  },
 ];

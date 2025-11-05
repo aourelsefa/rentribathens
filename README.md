@@ -15,6 +15,7 @@
 ## 📦 Εγκατάσταση και Εκκίνηση
 
 ### Προαπαιτούμενα
+
 - Node.js 18.x ή νεότερη έκδοση
 - npm ή yarn
 
@@ -37,11 +38,13 @@ npm run dev
 ## 🛠️ Διαθέσιμες Εντολές
 
 ### Ανάπτυξη
+
 - `npm run dev` - Εκκίνηση development server
 - `npm run build` - Build για production
 - `npm run start` - Εκκίνηση production server
 
 ### Code Quality
+
 - `npm run lint` - Έλεγχος ESLint
 - `npm run lint:fix` - Αυτόματη διόρθωση ESLint errors
 - `npm run format` - Format κώδικα με Prettier
@@ -49,9 +52,11 @@ npm run dev
 - `npm run type-check` - Έλεγχος TypeScript types
 
 ### SEO και Sitemap
+
 - `npm run sitemap` - Δημιουργία sitemap.xml και robots.txt
 
 ### Git Hooks
+
 - `npm run prepare` - Εγκατάσταση Husky hooks
 - `npm run pre-commit` - Εκτέλεση lint-staged (αυτόματα σε κάθε commit)
 
@@ -203,6 +208,7 @@ rentribathens/
 ### Αυτόματο Deployment με GitHub
 
 1. **Push τον κώδικα σε GitHub:**
+
    ```bash
    git add .
    git commit -m "Initial commit"
@@ -259,18 +265,21 @@ vercel --prod
 ## 🛠️ Development Tools
 
 ### ESLint Configuration
+
 - Next.js recommended rules
 - TypeScript support
 - Prettier integration
 - React hooks rules
 
 ### Prettier Configuration
+
 - Single quotes
 - Semicolons
 - 2-space indentation
 - Line width: 80 characters
 
 ### Pre-commit Hooks
+
 - Αυτόματος έλεγχος ESLint
 - Αυτόματο formatting με Prettier
 - Εμπόδιση commit αν υπάρχουν errors
@@ -289,6 +298,7 @@ vercel --prod
 ### Συνήθη Προβλήματα
 
 1. **Build fails:**
+
    ```bash
    # Καθαρίστε το cache
    rm -rf .next
@@ -296,12 +306,14 @@ vercel --prod
    ```
 
 2. **ESLint errors:**
+
    ```bash
    # Αυτόματη διόρθωση
    npm run lint:fix
    ```
 
 3. **TypeScript errors:**
+
    ```bash
    # Έλεγχος types
    npm run type-check

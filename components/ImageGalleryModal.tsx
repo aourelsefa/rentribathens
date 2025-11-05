@@ -8,7 +8,10 @@ interface ImageGalleryModalProps {
   boatName: string;
 }
 
-export default function ImageGalleryModal({ images, boatName }: ImageGalleryModalProps) {
+export default function ImageGalleryModal({
+  images,
+  boatName,
+}: ImageGalleryModalProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const imagesPerView = 3; // Number of images to show at once
@@ -57,44 +60,44 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
   };
 
   const goToPreviousGallery = () => {
-    setGalleryIndex((prev) => Math.max(0, prev - 1));
+    setGalleryIndex(prev => Math.max(0, prev - 1));
   };
 
   const goToNextGallery = () => {
-    setGalleryIndex((prev) => Math.min(images.length - imagesPerView, prev + 1));
+    setGalleryIndex(prev => Math.min(images.length - imagesPerView, prev + 1));
   };
 
   return (
     <>
       {/* Gallery with Navigation Buttons */}
-      <div className="relative">
+      <div className='relative'>
         {/* Previous Button */}
         {galleryIndex > 0 && (
           <button
             onClick={goToPreviousGallery}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-3 rounded-full transition-all duration-200 hover:scale-110"
-            aria-label="Προηγούμενες φωτογραφίες"
+            className='absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-3 rounded-full transition-all duration-200 hover:scale-110'
+            aria-label='Προηγούμενες φωτογραφίες'
           >
             <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              className='w-6 h-6'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 strokeWidth={2}
-                d="M15 19l-7-7 7-7"
+                d='M15 19l-7-7 7-7'
               />
             </svg>
           </button>
         )}
 
         {/* Gallery Container with smooth transition */}
-        <div className="overflow-hidden mx-14">
-          <div 
-            className="flex gap-4 transition-transform duration-500 ease-in-out will-change-transform"
+        <div className='overflow-hidden mx-14'>
+          <div
+            className='flex gap-4 transition-transform duration-500 ease-in-out will-change-transform'
             style={{
               transform: `translateX(calc(-${galleryIndex} * ((100% - ${(imagesPerView - 1) * 1}rem) / ${imagesPerView} + 1rem)))`,
             }}
@@ -104,10 +107,10 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
               return (
                 <div
                   key={index}
-                  className="flex-shrink-0 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300 hover:scale-105 relative"
+                  className='flex-shrink-0 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300 hover:scale-105 relative'
                   style={{
                     width: imageWidth,
-                    height: '280px'
+                    height: '280px',
                   }}
                   onClick={() => openModal(index)}
                 >
@@ -115,8 +118,8 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
                     src={image}
                     alt={`${boatName} - Φωτογραφία ${index + 1}`}
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw'
                     loading={index < 6 ? 'eager' : 'lazy'}
                   />
                 </div>
@@ -129,20 +132,20 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
         {galleryIndex + imagesPerView < images.length && (
           <button
             onClick={goToNextGallery}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-3 rounded-full transition-all duration-200 hover:scale-110"
-            aria-label="Επόμενες φωτογραφίες"
+            className='absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-3 rounded-full transition-all duration-200 hover:scale-110'
+            aria-label='Επόμενες φωτογραφίες'
           >
             <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              className='w-6 h-6'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 strokeWidth={2}
-                d="M9 5l7 7-7 7"
+                d='M9 5l7 7-7 7'
               />
             </svg>
           </button>
@@ -152,26 +155,26 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
       {/* Modal */}
       {selectedIndex !== null && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+          className='fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm'
           onClick={closeModal}
         >
           {/* Close Button */}
           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-colors duration-200"
-            aria-label="Κλείσιμο"
+            className='absolute top-4 right-4 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-colors duration-200'
+            aria-label='Κλείσιμο'
           >
             <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              className='w-6 h-6'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
+                d='M6 18L18 6M6 6l12 12'
               />
             </svg>
           </button>
@@ -179,24 +182,26 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
           {/* Previous Button */}
           {images.length > 1 && (
             <button
-              onClick={(e) => {
+              onClick={e => {
                 e.stopPropagation();
-                setSelectedIndex((selectedIndex - 1 + images.length) % images.length);
+                setSelectedIndex(
+                  (selectedIndex - 1 + images.length) % images.length
+                );
               }}
-              className="absolute left-4 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-colors duration-200"
-              aria-label="Προηγούμενη"
+              className='absolute left-4 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-colors duration-200'
+              aria-label='Προηγούμενη'
             >
               <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+                className='w-6 h-6'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
+                  d='M15 19l-7-7 7-7'
                 />
               </svg>
             </button>
@@ -205,24 +210,24 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
           {/* Next Button */}
           {images.length > 1 && (
             <button
-              onClick={(e) => {
+              onClick={e => {
                 e.stopPropagation();
                 setSelectedIndex((selectedIndex + 1) % images.length);
               }}
-              className="absolute right-4 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-colors duration-200"
-              aria-label="Επόμενη"
+              className='absolute right-4 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-colors duration-200'
+              aria-label='Επόμενη'
             >
               <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+                className='w-6 h-6'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   strokeWidth={2}
-                  d="M9 5l7 7-7 7"
+                  d='M9 5l7 7-7 7'
                 />
               </svg>
             </button>
@@ -230,23 +235,23 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
 
           {/* Image Counter */}
           {images.length > 1 && (
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm">
+            <div className='absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm'>
               {selectedIndex + 1} / {images.length}
             </div>
           )}
 
           {/* Image Container */}
           <div
-            className="relative max-w-7xl max-h-[90vh] w-full mx-4"
-            onClick={(e) => e.stopPropagation()}
+            className='relative max-w-7xl max-h-[90vh] w-full mx-4'
+            onClick={e => e.stopPropagation()}
           >
-            <div className="relative w-full h-full aspect-video">
+            <div className='relative w-full h-full aspect-video'>
               <Image
                 src={images[selectedIndex]}
                 alt={`${boatName} - Φωτογραφία ${selectedIndex + 1}`}
                 fill
-                className="object-contain"
-                sizes="90vw"
+                className='object-contain'
+                sizes='90vw'
                 priority
               />
             </div>
@@ -256,4 +261,3 @@ export default function ImageGalleryModal({ images, boatName }: ImageGalleryModa
     </>
   );
 }
-
