@@ -13,8 +13,8 @@ interface StructuredDataProps {
 
 export default function StructuredData({
   businessName = 'Ενοικίαση Σκαφών Λαγονήσι',
-  businessAddress = 'Λαγονήσι, Αττική, Ελλάδα',
-  businessPhone = process.env.NEXT_PUBLIC_BUSINESS_PHONE || '+302101234567',
+  businessAddress: _businessAddress = 'Λαγονήσι, Αττική, Ελλάδα',
+  businessPhone = process.env.NEXT_PUBLIC_BUSINESS_PHONE || '+306978277120',
   businessUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rentribathens.gr',
   additionalServices = []
 }: StructuredDataProps) {
@@ -27,7 +27,7 @@ export default function StructuredData({
     alternateName: 'RentRibAthens',
     description: 'Ενοικίαση RIB σκαφών στην Αθήνα για περιηγήσεις στον Σαρωνικό και τις ακτές της Αθήνας',
     url: businessUrl,
-    logo: `${businessUrl}/logo.png`,
+    logo: `${businessUrl}/rib/rra.png`,
     image: `${businessUrl}/og-image.png`,
     telephone: businessPhone,
     email: 'info@rentribathens.gr',

@@ -1,7 +1,6 @@
-import ServiceCard from '@/components/ServiceCard';
-import { services } from '@/data/services';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Υπηρεσίες',
@@ -19,6 +18,7 @@ export default function ServicesPage() {
       title: "Ενοικίαση Σκάφους",
       description: "Ενοικίαση RIB σκαφών για περιηγήσεις στον Σαρωνικό. Διαθέτουμε ποικιλία μεγέθους και χωρητικότητας για κάθε ανάγκη.",
       icon: <span className="text-2xl">🚤</span>,
+      image: "/images/boats/01-1.jpg",
       features: [
         "RIB σκάφη διαφόρων μεγεθών",
         "Πλήρης εξοπλισμός ασφαλείας",
@@ -30,6 +30,7 @@ export default function ServicesPage() {
       title: "Κρουαζιέρες",
       description: "Οργανωμένες κρουαζιέρες σε όμορφα μέρη του Σαρωνικού. Ανακαλύψτε κρυμμένα κολπάκια και παραλίες που είναι προσβάσιμες μόνο από τη θάλασσα.",
       icon: <span className="text-2xl">🏝️</span>,
+      image: "/images/boats/02-1.jpg",
       features: [
         "Προτεινόμενες διαδρομές",
         "Στάση σε όμορφα νησάκια",
@@ -41,6 +42,7 @@ export default function ServicesPage() {
       title: "Μεταφορές",
       description: "Μεταφορές σε νησιά και παραλίες του Σαρωνικού. Γρήγορη και ασφαλής μεταφορά με τα σκάφη μας.",
       icon: <span className="text-2xl">⛴️</span>,
+      image: "/images/boats/03-1.jpg",
       features: [
         "Μεταφορά σε νησιά Σαρωνικού",
         "Προσβασιμότητα σε απομονωμένες παραλίες",
@@ -143,12 +145,11 @@ export default function ServicesPage() {
 
                 <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                   <div className="aspect-video bg-gray-200 rounded-xl overflow-hidden">
-                    <div className="w-full h-full flex items-center justify-center text-gray-500">
-                      <div className="text-center">
-                        <span className="text-4xl mb-2 block">{service.icon}</span>
-                        <span className="text-sm">Εικόνα: {service.title}</span>
-                      </div>
-                    </div>
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -265,7 +266,7 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+302101234567"
+                  href="tel:+306978277120"
                   className="btn-secondary"
                 >
                   📞 Κλείστε Τώρα

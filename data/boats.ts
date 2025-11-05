@@ -40,7 +40,7 @@ export interface Boat {
 export const boats: Boat[] = [
   {
     id: '01',
-    slug: '01',
+    slug: 'lobster-23-rent-rib-athens',
     name: 'Lobster 23',
     shortDescription: 'Άνετο και γρήγορο σκάφος – ιδανικό για ημερήσιες εκδρομές και κρουαζιέρα.',
     longDescription: 'Το Lobster 23 προσφέρει άνεση για έως 9 επιβάτες, με ισχυρό κινητήρα 150 ίππων και χώρο για ηλιοθεραπεία. Ιδανικό για κλασικές αποδράσεις προς Σαρωνικό.',
@@ -86,13 +86,13 @@ export const boats: Boat[] = [
   },
   {
     id: '02',
-    slug: '02',
+    slug: 'ribco-27-rent-rib-athens',
     name: 'Ribco 27',
     shortDescription: 'Ισχυρό και γρήγορο σκάφος — ιδανικό για μεγάλες παρέες και μακρινές εκδρομές.',
     longDescription: 'Το Ribco 27 είναι ένα εντυπωσιακό σκάφος με κινητήρα 250 ίππων και χωρητικότητα 8 ατόμων. Ιδανικό για εξαιρετικές εκδρομές και γρήγορες μετακινήσεις.',
     capacity: 8,
     engine: '250 HP',
-    pricePerDay: 400,
+    pricePerDay: 500,
     images: [
       '/images/boats/02-8.jpg',
       '/images/boats/02-1.jpg',
@@ -136,7 +136,7 @@ export const boats: Boat[] = [
   },
   {
     id: '03',
-    slug: '03',
+    slug: 'olympic-490-rent-rib-athens',
     name: 'Olympic 490',
     shortDescription: 'Συμπαγές μηχανοκίνητο σκάφος — ιδανικό για ημερήσιες εκδρομές και γρήγορη πλεύση.',
     longDescription: 'Το Olympic 490 είναι ένα άνετο και αξιόπιστο σκάφος με κινητήρα 34 ίππων. Ιδανικό για εκδρομές μέχρι 5 ατόμων, με άνετη πλεύση και οικονομική κατανάλωση καυσίμου.',

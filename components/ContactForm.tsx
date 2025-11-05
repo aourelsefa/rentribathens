@@ -301,10 +301,10 @@ export default function ContactForm() {
       <div className="mt-8 pt-6 border-t border-gray-200 text-center">
         <p className="text-gray-600 mb-2">Ή επικοινωνήστε μαζί μας άμεσα:</p>
         <a 
-          href="tel:+302101234567" 
+          href="tel:+306978277120" 
           className="text-primary hover:text-primary/80 font-medium"
         >
-          📞 +30 210 123 4567
+          📞 +30 697 827 7120
         </a>
       </div>
     </div>

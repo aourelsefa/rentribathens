@@ -67,10 +67,10 @@ export default function Hero({
                   📞 {ctaText}
                 </a>
                 <a
-                  href="/boats"
+                  href="/fleet"
                   className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-200 text-center"
                 >
-                  Δείτε Σκάφη
+                  Στόλος
                 </a>
               </div>
             </div>

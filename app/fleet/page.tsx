@@ -1,8 +1,8 @@
 import React from 'react';
 import { boats } from '@/data/boats';
-import BoatCard from '@/components/BoatCard';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Στόλος - Ενοικίαση RIB στη Αθήνα',
@@ -33,16 +33,18 @@ export default function FleetPage() {
         <div className="container-custom">
           {/* Fleet Rows */}
           <div className="space-y-8 mb-16">
-            {boats.map((boat, index) => (
+            {boats.map((boat) => (
               <div key={boat.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="grid lg:grid-cols-3 gap-0">
                   {/* Image Section */}
                   <div className="lg:col-span-1">
                     <div className="aspect-video lg:aspect-square relative overflow-hidden">
-                      <img
+                      <Image
                         src={boat.images[0]}
                         alt={`${boat.name} - Κύρια φωτογραφία`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                       />
                       <div className="absolute top-4 left-4 bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-semibold">
                         {boat.name}
@@ -112,7 +114,7 @@ export default function FleetPage() {
                           Δείτε Λεπτομέρειες
                         </a>
                         <a
-                          href="tel:+302101234567"
+                          href="tel:+306978277120"
                           className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-200 text-center"
                         >
                           📞 Κλείστε Τώρα

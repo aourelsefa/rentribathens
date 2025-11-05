@@ -33,7 +33,7 @@ export default function SEO({
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rentribathens.gr';
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const fullOgImage = openGraphImage.startsWith('http') ? openGraphImage : `${siteUrl}${openGraphImage}`;
-  const businessPhone = process.env.NEXT_PUBLIC_BUSINESS_PHONE || '+302101234567';
+  const businessPhone = process.env.NEXT_PUBLIC_BUSINESS_PHONE || '+306978277120';
 
   // Twitter handle (if available)
   const twitterHandle = '@rentribathens';

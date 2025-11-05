@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
     // TODO: Send SMS notification to business owner
     /*
     await sendSMS({
-      to: process.env.BUSINESS_PHONE || '+302101234567',
+      to: process.env.BUSINESS_PHONE || '+306978277120',
       message: `Νέο μήνυμα από ${body.name} (${body.phone}). Έλεγχος email για λεπτομέρειες.`,
     });
     */

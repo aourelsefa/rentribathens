@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import NavLink from './NavLink';
 
 export default function Header() {
@@ -36,13 +37,17 @@ export default function Header() {
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">R</span>
-              </div>
-              <span className="text-xl md:text-2xl font-bold text-gray-900">
-                RentRibAthens
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/rib/rra.png"
+                alt="RentRibAthens Logo"
+                width={200}
+                height={200}
+                className="h-12 md:h-14 w-auto object-contain"
+                priority
+                quality={100}
+                unoptimized={true}
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -57,7 +62,7 @@ export default function Header() {
             {/* Phone CTA Button - Always visible */}
             <div className="flex items-center space-x-4">
               <a
-                href="tel:+302101234567"
+                href="tel:+306978277120"
                 className="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-200 flex items-center space-x-2 text-sm md:text-base"
               >
                 <span>📞</span>

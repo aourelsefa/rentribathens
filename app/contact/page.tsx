@@ -1,10 +1,9 @@
 import ContactForm from '@/components/ContactForm';
-import ServiceCard from '@/components/ServiceCard';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Επικοινωνία',
-  description: 'Επικοινωνήστε μαζί μας για κράτηση RIB σκαφών. Τηλέφωνο: +30 210 123 4567. Διεύθυνση: Λαγονήσι, Αττική. Άμεση εξυπηρέτηση.',
+  description: 'Επικοινωνήστε μαζί μας για κράτηση RIB σκαφών. Τηλέφωνο: +30 697 827 7120. Διεύθυνση: Λαγονήσι, Αττική. Άμεση εξυπηρέτηση.',
   openGraph: {
     title: 'Επικοινωνία - RentRibAthens',
     description: 'Επικοινωνήστε μαζί μας για κράτηση RIB σκαφών. Άμεση εξυπηρέτηση.',
@@ -18,7 +17,7 @@ export default function ContactPage() {
       description: "Καλέστε μας για άμεση κράτηση",
       icon: <span className="text-2xl">📞</span>,
       details: [
-        "+30 210 123 4567",
+        "+30 697 827 7120",
         "Διαθέσιμοι 08:00 - 20:00",
         "Άμεση απάντηση"
       ]
@@ -109,7 +108,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {/* Phone */}
               <a
-                href="tel:+302101234567"
+                href="tel:+306978277120"
                 className="group bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
               >
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
@@ -123,7 +122,7 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/302101234567"
+                href="https://wa.me/306978277120"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
@@ -139,7 +138,7 @@ export default function ContactPage() {
 
               {/* Viber */}
               <a
-                href="viber://chat?number=+302101234567"
+                href="viber://chat?number=+306978277120"
                 className="group bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
               >
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">

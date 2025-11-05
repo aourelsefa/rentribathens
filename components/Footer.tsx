@@ -49,10 +49,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-2">
-              <Link href="/" className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">R</span>
-                </div>
+              <Link href="/" className="flex items-center mb-4">
                 <span className="text-2xl font-bold">RentRibAthens</span>
               </Link>
               <p className="text-gray-300 mb-4 max-w-md">
@@ -75,10 +72,10 @@ export default function Footer() {
                 <div className="flex items-center space-x-2">
                   <span>📞</span>
                   <a 
-                    href="tel:+302101234567" 
+                    href="tel:+306978277120" 
                     className="hover:text-accent transition-colors duration-200"
                   >
-                    +30 210 123 4567
+                    +30 697 827 7120
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -149,7 +146,17 @@ export default function Footer() {
               {/* Copyright */}
               <div className="text-gray-400 text-center md:text-right">
                 <p>&copy; {currentYear} RentRibAthens. Όλα τα δικαιώματα διατηρούνται.</p>
-                <p className="text-sm mt-1">Αναπτυγμένο με ❤️ για την Ελλάδα</p>
+                <p className="text-sm mt-1">
+                  Αναπτυγμένο με ❤️ απο το{' '}
+                  <a 
+                    href="https://sefaweb.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-accent hover:text-accent/80 transition-colors duration-200"
+                  >
+                    SEFAWEB
+                  </a>
+                </p>
               </div>
             </div>
           </div>
