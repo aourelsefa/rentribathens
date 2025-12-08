@@ -1,0 +1,346 @@
+{
+  "nav": {
+    "home": "Home",
+    "fleet": "Fleet",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "common": {
+    "callNow": "Call Now",
+    "phone": "Phone",
+    "learnMore": "Learn More",
+    "bookNow": "Book Now",
+    "sendMessage": "Send Message",
+    "seeAll": "See All",
+    "details": "View Details",
+    "available": "Available",
+    "backToHome": "Back to Home"
+  },
+  "home": {
+    "title": "RIB Rental in Athens",
+    "subtitle": "Discover the beautiful coasts of the Saronic Gulf with our boats",
+    "hero": {
+      "ribRental": "RIB Boat Rental",
+      "fleet": "Fleet",
+      "whyChooseUs": "Why Choose Us?",
+      "why1": "Instant booking & availability",
+      "why2": "Professional safety equipment",
+      "why3": "Free advice & support",
+      "why4": "Best location in Lagonisi"
+    },
+    "fleet": {
+      "title": "Boat Rental",
+      "description": "We offer a variety of RIB boats for every need and budget",
+      "seeAllFleet": "See All Fleet"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Full equipment and specialized service for the best experience",
+      "serviceNumber": "Service",
+      "cruiseDestinations": "Cruise Destinations",
+      "transferRoutes": "Transfer Routes"
+    },
+    "destinations": {
+      "title": "Our Destinations",
+      "description": "Discover the beautiful destinations we offer in the Saronic Gulf",
+      "distance": "Distance",
+      "bestTime": "Best Time",
+      "rating": "Rating",
+      "viewDetails": "View details"
+    },
+    "reviews": {
+      "title": "What Our Customers Say",
+      "description": "Enjoy the experiences of our customers from their trips",
+      "review1": "Excellent experience! The boat was excellently maintained and the captain was very professional. We had a wonderful time in the Saronic Gulf. We will definitely do it again!",
+      "review1Author": "Marios Konstantinou",
+      "review1Initials": "MC",
+      "review2": "Absolute success! The rental was very easy and the boat was excellent. We visited many islands and had a wonderful time. Very polite and professional!",
+      "review2Author": "Sofia Papadopoulou",
+      "review2Initials": "SP",
+      "review3": "Our family experience was fantastic! The kids loved it and we fully relaxed. The staff was very helpful and the boat excellently maintained. We highly recommend!",
+      "review3Author": "Giannis Athanasiou",
+      "review3Initials": "GA"
+    },
+    "cta": {
+      "title": "Ready for a unique experience?",
+      "description": "Contact us now to book your trip",
+      "contact": "Contact"
+    }
+  },
+  "meta": {
+    "siteName": "RentRibAthens",
+    "siteDescription": "RIB boat rental for tours in the Saronic Gulf and the coasts of Athens. Safe and comfortable trips with professional service."
+  },
+  "services": {
+    "rent": {
+      "title": "Boat Rental",
+      "short": "Rentals with or without crew. Flexible hours.",
+      "description": "Rent one of our boats for your excursions. With or without crew, flexible hours and full safety equipment."
+    },
+    "cruises": {
+      "title": "Cruises",
+      "short": "Day cruises to the most beautiful beaches.",
+      "description": "Enjoy organized cruises to the most beautiful beaches of the Saronic Gulf. Relax, swim and discover hidden coves."
+    },
+    "transfers": {
+      "title": "Transfers",
+      "short": "Transfers from Lagonisi to neighboring islands.",
+      "description": "Fast and comfortable transfers from Lagonisi to the neighboring islands of the Saronic Gulf. Ideal for day trips."
+    }
+  },
+  "boats": {
+    "perDay": "day",
+    "people": "people",
+    "engine": "engine",
+    "photos": "photos",
+    "viewDetails": "View details",
+    "lobster23": {
+      "shortDescription": "Comfortable and fast boat – ideal for day trips and cruises.",
+      "longDescription": "The Lobster 23 offers comfort for up to 9 passengers, with a powerful 150 HP engine and space for sunbathing. Ideal for classic escapes to the Saronic Gulf."
+    },
+    "ribco27": {
+      "shortDescription": "Powerful and fast boat — ideal for large groups and long excursions.",
+      "longDescription": "The Ribco 27 is an impressive boat with a 250 HP engine and capacity for 8 people. Ideal for exceptional trips and fast transfers."
+    },
+    "olympic490": {
+      "shortDescription": "Compact motorboat — ideal for day trips and fast cruising.",
+      "longDescription": "The Olympic 490 is a comfortable and reliable boat with a 34 HP engine. Ideal for trips up to 5 people, with comfortable cruising and economical fuel consumption."
+    },
+    "photos": "Photos",
+    "description": "Description",
+    "technicalSpecs": "Technical Specifications",
+    "manufacturer": "Manufacturer",
+    "model": "Model",
+    "yearBuilt": "Year Built",
+    "lengthLabel": "Length",
+    "maxSpeedLabel": "Max Speed",
+    "fuelCapacity": "Fuel Capacity",
+    "capacityFacilities": "Capacity & Facilities",
+    "guests": "Guests",
+    "bathrooms": "Bathrooms",
+    "captainNotIncluded": "*Captain not included",
+    "capacity": "Capacity:",
+    "engine": "Engine:",
+    "otherBoats": "Other Boats You Might Like",
+    "people": "People",
+    "feet": "feet",
+    "meters": "m",
+    "knots": "knots",
+    "feetShort": "ft",
+    "metersShort": "m",
+    "knotsShort": "knots",
+    "length": {
+      "lobster23": "23 feet (7 m)",
+      "ribco27": "27 feet (8.2 m)",
+      "olympic490": "16 feet (5 m)"
+    },
+    "maxSpeed": {
+      "lobster23": "36 knots",
+      "ribco27": "45 knots",
+      "olympic490": "21 knots"
+    }
+  },
+  "destinations": {
+    "athenaiki-riviera": {
+      "shortDescription": "The beautiful coast of Athens with stunning beaches and luxurious resorts.",
+      "longDescription": "The Athenian Riviera stretches from Faliro to Sounio, offering a unique experience with stunning beaches, clear water and excellent facilities. It is the ideal destination for those who want to combine access to the city with the enjoyment of the sea. The beaches of the Riviera are known for their sandy shores, clear water and luxurious facilities they offer.",
+      "distance": "15-40 km from Lagonisi",
+      "bestTime": "May - September",
+      "highlights": [
+        "Stunning sandy beaches",
+        "Luxurious facilities and beach bars",
+        "Easy access from Athens",
+        "Ideal for families and couples",
+        "Excellent facilities for snorkeling"
+      ],
+      "tips": [
+        "Best time to visit: May - September",
+        "It is recommended to reserve a spot at a beach bar early in the morning",
+        "Combined visit to the Temple of Poseidon at Sounio is available",
+        "Surfing and other water sports available",
+        "Many options for food and drinks with sea view"
+      ]
+    },
+    "aigina": {
+      "shortDescription": "The closest island of the Saronic Gulf with rich history and beautiful beaches.",
+      "longDescription": "Aegina is the closest island of the Saronic Gulf, making it an ideal destination for day trips. The island combines rich ancient monuments, such as the ancient Temple of Aphaia, with beautiful beaches and traditional villages. The capital of the island, Aegina, is known for its neoclassical buildings and traditional market, where you can find fresh almonds and Aegina pistachios.",
+      "distance": "25 km from Lagonisi",
+      "bestTime": "April - October",
+      "highlights": [
+        "Historic Temple of Aphaia (5th century BC)",
+        "Beautiful beaches with clear water",
+        "Traditional market with local products",
+        "Easy access - just 1 hour from Lagonisi",
+        "Ideal for archaeological excursions"
+      ],
+      "tips": [
+        "Visit the Temple of Aphaia for fantastic views",
+        "Try the fresh almonds and Aegina pistachios",
+        "Recommended beaches: Agia Marina, Marathonas, Souvala",
+        "Best time: April - October",
+        "Combine with a visit to the archaeological museum"
+      ]
+    },
+    "poros": {
+      "shortDescription": "Colorful island with lush vegetation, ideal for relaxation and swimming.",
+      "longDescription": "Poros is a small but very beautiful island consisting of two islets, Sphairia and Kalavria, connected by a small bridge. The island is known for its lush vegetation, beautiful seaside villages and quiet beaches. The capital, also Poros, is built amphitheatrically on the hill and offers fantastic views towards the Peloponnese. The island is ideal for those seeking tranquility and relaxation.",
+      "distance": "35 km from Lagonisi",
+      "bestTime": "May - September",
+      "highlights": [
+        "Lush vegetation and green landscape",
+        "Amphitheatrical capital with traditional architecture",
+        "Quiet beaches with clear water",
+        "Historic Monastery of Zoodochos Pigi",
+        "Short distance from the Peloponnese"
+      ],
+      "tips": [
+        "Visit the Monastery of Zoodochos Pigi for the view",
+        "Recommended beaches: Love Bay, Russian Shipyard",
+        "Ideal for dining at seaside taverns",
+        "Best time: May - September",
+        "You can combine with a visit to Troezen"
+      ]
+    },
+    "ydra": {
+      "shortDescription": "The most charming island of the Saronic Gulf with unique architecture and no cars allowed.",
+      "longDescription": "Hydra is one of the most famous and charming islands of the Saronic Gulf, known for the ban on cars and its traditional stone houses. The island has a rich naval history and was an important trading center during the Revolution. The capital, also Hydra, is one of the most photographed villages in Greece, with the stone houses forming an amphitheatrical amphitheater around the port. The island is a popular destination for artists and celebrities.",
+      "distance": "45 km from Lagonisi",
+      "bestTime": "April - October",
+      "highlights": [
+        "Cars banned - only donkeys and bicycles",
+        "Stone architecture and traditional houses",
+        "Rich naval history",
+        "Popular destination for artists",
+        "Beautiful beaches accessible only by boat"
+      ],
+      "tips": [
+        "Visit the museums and art galleries",
+        "Recommended beaches: Mandra, Vlychos, Agia Eirini",
+        "Try the local sweets and fish",
+        "Best time: April - October",
+        "Ideal for photos and walks"
+      ]
+    },
+    "tzia": {
+      "shortDescription": "The closest Cycladic island with unique landscape and archaeological sites.",
+      "longDescription": "Tzia (or Kea) is the closest island of the Cyclades, but technically belongs to the Saronic. The island combines Cycladic landscape with lush vegetation and is known for its archaeological sites, such as the ancient Kouros statue found here. The capital Ioulida is built amphitheatrically and offers fantastic views. The island has beautiful beaches, many hiking trails and rich marine life.",
+      "distance": "55 km from Lagonisi",
+      "bestTime": "May - September",
+      "highlights": [
+        "Cycladic landscape with lush vegetation",
+        "Archaeological museum with the Kea Kouros",
+        "Beautiful beaches with clear water",
+        "Hiking trails",
+        "Rich marine life - ideal for snorkeling"
+      ],
+      "tips": [
+        "Visit the archaeological museum in Ioulida",
+        "Recommended beaches: Otzias, Koundouros, Frea",
+        "Ideal for snorkeling and water sports",
+        "Best time: May - September",
+        "Combine with hiking on the island's trails"
+      ]
+    },
+    "kythnos": {
+      "shortDescription": "Discoverable island with hot springs, traditional villages and quiet beaches.",
+      "longDescription": "Kythnos is one of the least known islands of the Saronic, offering an authentic Greek experience. The island is known for its hot springs, located in the Loutra area, and for its traditional villages, Chora and Merichas. Kythnos has many beautiful beaches, some of which are accessible only by boat. The island is ideal for those seeking tranquility and natural beauty.",
+      "distance": "70 km from Lagonisi",
+      "bestTime": "May - September",
+      "highlights": [
+        "Hot springs of Loutra",
+        "Traditional villages Chora and Merichas",
+        "Many quiet beaches",
+        "Authentic Greek experience",
+        "Ideal for snorkeling and fishing"
+      ],
+      "tips": [
+        "Visit the hot springs in Loutra",
+        "Recommended beaches: Kolona, Apo Kanalia, Martinthia",
+        "Try the local products and fish",
+        "Best time: May - September",
+        "Ideal for photos and exploration"
+      ]
+    },
+    "makronisos": {
+      "shortDescription": "Small uninhabited island with beautiful beaches and historical significance.",
+      "longDescription": "Makronisos is a small uninhabited island located near Tzia (Kea). The island has historical significance as it was used as a place of exile during the Civil War. Today, Makronisos offers beautiful beaches with clear water that are accessible only by boat. The island is ideal for those seeking absolute tranquility and isolation, with wild nature and stunning seas.",
+      "distance": "60 km from Lagonisi",
+      "bestTime": "May - September",
+      "highlights": [
+        "Uninhabited island with wild nature",
+        "Beautiful beaches accessible only by boat",
+        "Clear water and ideal for swimming",
+        "Absolute tranquility and isolation",
+        "Historical significance - place of exile"
+      ],
+      "tips": [
+        "Best time to visit: May - September",
+        "Bring food and drinks with you as there are no facilities",
+        "Ideal for snorkeling and swimming",
+        "Watch the weather - the island may be inaccessible in bad weather",
+        "Recommended visit with a captain who knows the area"
+      ]
+    },
+    "patroklos": {
+      "shortDescription": "Small island near Sounio with beautiful beaches and stunning views.",
+      "longDescription": "Patroklos (or Patroklio) is a small uninhabited island located near Sounio, on the Athenian Riviera. The island is known for its beautiful beaches, dark blue water and stunning views towards the Temple of Poseidon. Patroklos offers absolute tranquility and is ideal for swimming, snorkeling and sunbathing. The island is accessible only by boat and is one of the most beautiful hidden destinations of the Athenian Riviera.",
+      "distance": "25 km from Lagonisi",
+      "bestTime": "May - October",
+      "highlights": [
+        "Stunning views towards the Temple of Poseidon",
+        "Beautiful beaches with dark blue water",
+        "Ideal for snorkeling and swimming",
+        "Uninhabited island with absolute tranquility",
+        "Accessible only by boat"
+      ],
+      "tips": [
+        "Best time to visit: May - October",
+        "Combine with a visit to Sounio and the Temple of Poseidon",
+        "Bring snorkeling gear and swimming equipment",
+        "Ideal for photos with the Temple in the background",
+        "Watch the wind - the island may be inaccessible with strong winds"
+      ]
+    },
+    "agkistri": {
+      "shortDescription": "Green island with pine forests, beautiful beaches and traditional villages.",
+      "longDescription": "Agkistri is a small green island in the Saronic Gulf, known for its pine forests and beautiful beaches. The island has two main villages, Megali Chora and Skala, and offers an ideal escape with a combination of nature, sea and traditional Greek atmosphere. Agkistri has many beautiful beaches, from sandy to rocky, and is ideal for those seeking a quiet and natural experience.",
+      "distance": "30 km from Lagonisi",
+      "bestTime": "April - October",
+      "highlights": [
+        "Lush vegetation - pine forest",
+        "Traditional villages Megali Chora and Skala",
+        "Variety of beaches - sandy and rocky",
+        "Ideal for families",
+        "Combination of nature and sea"
+      ],
+      "tips": [
+        "Best time to visit: April - October",
+        "Visit Megali Chora for traditional atmosphere",
+        "Recommended beaches: Skala, Chaloyita, Dragonera",
+        "Try the local fish at seaside taverns",
+        "Ideal for walks in the pine forest"
+      ]
+    },
+    "about": "About the Destination",
+    "attractions": "Attractions & Features",
+    "tips": "Tips & Information",
+    "bookTrip": "Book Your Trip",
+    "tripInfo": "Trip Information",
+    "otherDestinations": "Other Destinations You Might Like",
+    "seeAllServices": "See All Services",
+    "learnMore": "Learn more"
+  },
+  "structuredData": {
+    "businessName": "RIB Boat Rental Lagonisi",
+    "businessDescription": "RIB boat rental in Athens for tours in the Saronic Gulf and the coasts of Athens",
+    "service1Name": "RIB Boat Rental",
+    "service1Description": "RIB boat rental for tours in the Saronic Gulf. We offer a variety of sizes and capacities for every need.",
+    "service2Name": "Saronic Gulf Cruises",
+    "service2Description": "Organized cruises to beautiful places in the Saronic Gulf. Discover hidden coves and beaches that are only accessible by sea.",
+    "service3Name": "Island Transfers",
+    "service3Description": "Transfers to islands and beaches of the Saronic Gulf. Fast and safe transportation with our boats.",
+    "areaServed": "Saronic Gulf, Athens",
+    "reviewAuthor": "Maria Papadopoulou",
+    "reviewBody": "Excellent experience! The boat was clean, the captain very professional and the route wonderful."
+  }
+}
