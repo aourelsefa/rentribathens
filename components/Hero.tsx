@@ -85,7 +85,7 @@ export default function Hero({
         <div className='container-custom'>
           <div className='grid lg:grid-cols-2 gap-12 items-end'>
             {/* Left Side - Text Content */}
-            <div className='text-white'>
+            <div className='text-white px-4 sm:px-0'>
               <div className='mb-6'>
                 <span className='inline-block bg-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-4'>
                   🚤 {t.ribRental}

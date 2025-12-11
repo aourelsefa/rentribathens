@@ -14,7 +14,34 @@ export default function ImageGalleryModal({
 }: ImageGalleryModalProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [galleryIndex, setGalleryIndex] = useState(0);
-  const imagesPerView = 3; // Number of images to show at once
+  const [imagesPerView, setImagesPerView] = useState(3);
+
+  // Responsive images per view: 1 on mobile, 2 on tablet, 3 on desktop
+  useEffect(() => {
+    const updateImagesPerView = () => {
+      if (typeof window !== 'undefined') {
+        if (window.innerWidth < 640) {
+          // Mobile - show 1 image
+          setImagesPerView(1);
+        } else if (window.innerWidth < 1024) {
+          // Tablet - show 2 images
+          setImagesPerView(2);
+        } else {
+          // Desktop - show 3 images
+          setImagesPerView(3);
+        }
+      }
+    };
+
+    // Set initial value
+    updateImagesPerView();
+
+    // Update on resize
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', updateImagesPerView);
+      return () => window.removeEventListener('resize', updateImagesPerView);
+    }
+  }, []);
 
   // Close modal on Escape key
   useEffect(() => {
@@ -60,11 +87,13 @@ export default function ImageGalleryModal({
   };
 
   const goToPreviousGallery = () => {
-    setGalleryIndex(prev => Math.max(0, prev - 1));
+    setGalleryIndex(prev => Math.max(0, prev - imagesPerView));
   };
 
   const goToNextGallery = () => {
-    setGalleryIndex(prev => Math.min(images.length - imagesPerView, prev + 1));
+    setGalleryIndex(prev =>
+      Math.min(Math.max(0, images.length - imagesPerView), prev + imagesPerView)
+    );
   };
 
   return (
@@ -75,11 +104,11 @@ export default function ImageGalleryModal({
         {galleryIndex > 0 && (
           <button
             onClick={goToPreviousGallery}
-            className='absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-3 rounded-full transition-all duration-200 hover:scale-110'
+            className='absolute left-0 sm:left-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110'
             aria-label='Προηγούμενες φωτογραφίες'
           >
             <svg
-              className='w-6 h-6'
+              className='w-5 h-5 sm:w-6 sm:h-6'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -95,36 +124,38 @@ export default function ImageGalleryModal({
         )}
 
         {/* Gallery Container with smooth transition */}
-        <div className='overflow-hidden mx-14'>
+        <div className='overflow-hidden mx-12 sm:mx-14 md:mx-16'>
           <div
-            className='flex gap-4 transition-transform duration-500 ease-in-out will-change-transform'
+            className='flex gap-3 sm:gap-4 transition-transform duration-500 ease-in-out'
             style={{
-              transform: `translateX(calc(-${galleryIndex} * ((100% - ${(imagesPerView - 1) * 1}rem) / ${imagesPerView} + 1rem)))`,
+              transform: `translateX(-${(galleryIndex * 100) / imagesPerView}%)`,
             }}
           >
-            {images.map((image, index) => {
-              const imageWidth = `calc((100% - ${(imagesPerView - 1) * 1}rem) / ${imagesPerView})`;
-              return (
-                <div
-                  key={index}
-                  className='flex-shrink-0 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300 hover:scale-105 relative'
-                  style={{
-                    width: imageWidth,
-                    height: '280px',
-                  }}
-                  onClick={() => openModal(index)}
-                >
-                  <Image
-                    src={image}
-                    alt={`${boatName} - Φωτογραφία ${index + 1}`}
-                    fill
-                    className='object-cover'
-                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw'
-                    loading={index < 6 ? 'eager' : 'lazy'}
-                  />
-                </div>
-              );
-            })}
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className='flex-shrink-0 rounded-xl overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300 hover:scale-105 relative h-[240px] sm:h-[280px]'
+                style={{
+                  width: `calc(${100 / imagesPerView}% - ${((imagesPerView - 1) * 0.75) / imagesPerView}rem)`,
+                }}
+                onClick={() => openModal(index)}
+              >
+                <Image
+                  src={image}
+                  alt={`${boatName} - Φωτογραφία ${index + 1}`}
+                  fill
+                  className='object-cover'
+                  sizes={
+                    imagesPerView === 1
+                      ? '100vw'
+                      : imagesPerView === 2
+                        ? '50vw'
+                        : '33vw'
+                  }
+                  loading={index < 6 ? 'eager' : 'lazy'}
+                />
+              </div>
+            ))}
           </div>
         </div>
 
@@ -132,11 +163,11 @@ export default function ImageGalleryModal({
         {galleryIndex + imagesPerView < images.length && (
           <button
             onClick={goToNextGallery}
-            className='absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-3 rounded-full transition-all duration-200 hover:scale-110'
+            className='absolute right-0 sm:right-2 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg hover:bg-gray-50 text-gray-700 p-2 sm:p-3 rounded-full transition-all duration-200 hover:scale-110'
             aria-label='Επόμενες φωτογραφίες'
           >
             <svg
-              className='w-6 h-6'
+              className='w-5 h-5 sm:w-6 sm:h-6'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
