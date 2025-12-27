@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import Layout from '@/components/Layout';
 import StructuredData from '@/components/StructuredData';
+import CookieConsent from '@/components/CookieConsent';
 import '../globals.css';
 import { isValidLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
@@ -42,6 +43,7 @@ export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
       <body className={`${roboto.variable} font-sans antialiased`}>
         <StructuredData locale={locale} />
         <Layout locale={locale}>{children}</Layout>
+        <CookieConsent locale={locale} />
       </body>
     </html>
   );

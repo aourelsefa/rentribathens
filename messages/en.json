@@ -342,5 +342,24 @@
     "areaServed": "Saronic Gulf, Athens",
     "reviewAuthor": "Maria Papadopoulou",
     "reviewBody": "Excellent experience! The boat was clean, the captain very professional and the route wonderful."
+  },
+  "gdpr": {
+    "cookieBanner": {
+      "title": "We Use Cookies",
+      "description": "We use cookies to improve your experience on our website. By continuing to browse, you accept the use of cookies.",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "customize": "Customize",
+      "save": "Save",
+      "necessary": "Necessary",
+      "analytics": "Analytics",
+      "marketing": "Marketing",
+      "necessaryDesc": "Essential cookies for website functionality",
+      "analyticsDesc": "Cookies for website usage analysis",
+      "marketingDesc": "Cookies for marketing and advertising"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
   }
 }

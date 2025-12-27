@@ -24,7 +24,10 @@ module.exports = {
     } else if (path === '/fleet' || path === '/en/fleet') {
       customConfig.priority = 0.9;
       customConfig.changefreq = 'weekly';
-    } else if (path.startsWith('/destinations/') || path.startsWith('/en/destinations/')) {
+    } else if (
+      path.startsWith('/destinations/') ||
+      path.startsWith('/en/destinations/')
+    ) {
       customConfig.priority = 0.8;
       customConfig.changefreq = 'monthly';
     } else if (path === '/services' || path === '/en/services') {
@@ -91,6 +94,12 @@ module.exports = {
       { path: '/en/services', priority: 0.8, changefreq: 'monthly' },
       { path: '/contact', priority: 0.8, changefreq: 'monthly' },
       { path: '/en/contact', priority: 0.8, changefreq: 'monthly' },
+      { path: '/privacy-policy', priority: 0.5, changefreq: 'yearly' },
+      { path: '/en/privacy-policy', priority: 0.5, changefreq: 'yearly' },
+      { path: '/terms-of-service', priority: 0.5, changefreq: 'yearly' },
+      { path: '/en/terms-of-service', priority: 0.5, changefreq: 'yearly' },
+      { path: '/cookie-policy', priority: 0.5, changefreq: 'yearly' },
+      { path: '/en/cookie-policy', priority: 0.5, changefreq: 'yearly' },
     ];
 
     staticPages.forEach(page => {

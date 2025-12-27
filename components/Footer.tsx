@@ -147,8 +147,38 @@ export default function Footer({ locale }: FooterProps) {
             </div>
           </div>
 
+          {/* Legal Links */}
+          <div className='border-t border-gray-700 mt-8 pt-6'>
+            <div className='flex flex-wrap gap-4 justify-center text-sm text-gray-400'>
+              <Link
+                href={
+                  locale === 'el' ? '/privacy-policy' : '/en/privacy-policy'
+                }
+                className='hover:text-accent transition-colors duration-200'
+              >
+                {locale === 'el' ? 'Πολιτική Απορρήτου' : 'Privacy Policy'}
+              </Link>
+              <span className='text-gray-600'>•</span>
+              <Link
+                href={
+                  locale === 'el' ? '/terms-of-service' : '/en/terms-of-service'
+                }
+                className='hover:text-accent transition-colors duration-200'
+              >
+                {locale === 'el' ? 'Όροι Χρήσης' : 'Terms of Service'}
+              </Link>
+              <span className='text-gray-600'>•</span>
+              <Link
+                href={locale === 'el' ? '/cookie-policy' : '/en/cookie-policy'}
+                className='hover:text-accent transition-colors duration-200'
+              >
+                {locale === 'el' ? 'Πολιτική Cookies' : 'Cookie Policy'}
+              </Link>
+            </div>
+          </div>
+
           {/* Social Links and Copyright */}
-          <div className='border-t border-gray-700 mt-8 pt-8'>
+          <div className='border-t border-gray-700 mt-6 pt-6'>
             <div className='flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
               {/* Social Icons */}
               <div className='flex space-x-4'>
