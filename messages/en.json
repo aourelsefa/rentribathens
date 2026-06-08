@@ -71,6 +71,25 @@
     "siteName": "RentRibAthens",
     "siteDescription": "RIB boat rental for tours in the Saronic Gulf and the coasts of Athens. Safe and comfortable trips with professional service."
   },
+  "landing": {
+    "boats": {
+      "title": "RIB Rental in Athens",
+      "subtitle": "3 boats, instant availability. Book with one phone call.",
+      "metaTitle": "RIB Rental Athens | 3 Boats from €180/day",
+      "metaDescription": "Rent a RIB boat in Athens from €180/day. Lobster 23, Ribco 27, Olympic 490. Instant phone booking — Lagonisi, Saronic Gulf.",
+      "badge": "RIB Boat Rental",
+      "fleetTitle": "Choose your boat",
+      "fleetSubtitle": "Three boats for every need — from budget day trips to premium cruises.",
+      "from": "from",
+      "trustTitle": "Why RentRibAthens",
+      "trust1": "Instant phone booking",
+      "trust2": "Full safety equipment included",
+      "trust3": "Lagonisi — gateway to the Saronic Gulf",
+      "trust4": "Available 7 days a week",
+      "ctaTitle": "Book now with one call",
+      "ctaSubtitle": "Available daily 08:00–20:00. No forms — just call."
+    }
+  },
   "services": {
     "rent": {
       "title": "Boat Rental",
